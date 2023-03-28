@@ -1,0 +1,222 @@
+body{
+    background-image: url("img/img2.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+    position: fixed;
+    width: 90%;
+    top: 0;
+    right: 0;
+    display: flex;
+    background: transparent;
+    padding: 20px 15px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+span{
+    color: orange;
+}
+
+.increase{
+    color: grey;
+}
+
+
+.pagination{
+    position: absolute;
+    left: 50px;
+}
+
+.pagination ul{
+    list-style: none;
+}
+
+.pagination ul li{
+    border-radius: 50%;
+    border: 6px solid grey;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.pagination ul li.active{
+    color: black;
+    background-color: white;
+    border: 6px solid orange;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 50px;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+.container h4{
+    color: grey;
+}
+
+.ques-container{
+    width: 90%;
+    height: 50%;
+    border: 7px solid orange;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ques-container h4{
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.options{
+    width: 100%;
+    margin: 10px;
+}
+
+.options li{
+    background-color: black;
+    opacity: 0.8;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    list-style-type: upper-alpha;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+}
+.loader{
+    color: black;
+}
+
+.options li:hover{
+    opacity: 1;
+    background-color: orange;
+}
+
+.time{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.score{
+    position: absolute;
+    top: 10px;
+    color: aliceblue;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 10%;
+    padding: 10px 15px;
+    font-weight: bold;
+    
+}
+
+.next-btn {
+    float: right;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+}
+
+.prev-btn {
+    float: left;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    display: none;
+}
+
+.prev-btn button{
+    color: black;
+    background-color: orange;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid orange;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.next-btn button{
+    color: black;
+    background-color: orange;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid orange;
+    border-radius: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.next-btn button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.prev-btn button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.progress{
+    height: 10px;
+    border-radius: 10px;
+}
+.ques__progress{
+    background-color: orange;
+}
+
+.font-style{
+    font-size: 30px;
+}
+
+@media(max-width: 420px){
+    .container{
+        margin-left: 450px;
+    }
+}
